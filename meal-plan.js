@@ -6,6 +6,7 @@
         document.getElementById("open-sidenav").addEventListener("click", expand);
         document.getElementById("close-button").addEventListener("click", collapse);
         document.getElementById("drop").addEventListener("click", dropdown);
+        document.getElementById("checkout").addEventListener("click", checkout);
     }
     
     console.log("hey2");
@@ -39,17 +40,11 @@ window.onclick = function(event) {
     }
   }
 }
-/*
+
 // checkout button on home page
 function checkout() {
-  document.getElementById("checkoutButton").addEventListener("click", checkoutClick);
-}
-
-function checkoutClick() {
-  // TODO: Until Pao defines checkout page id's
-  // hide all the other stuff
-  document.getElementById("???").style.display = "none";
+  document.getElementById("menu-id").style.display = "none";
   // make visible the checkout divs
-  document.getElementById("???").style.display = "block";
-}*/
+  document.getElementById("checkout-id").style.display = "block";
+}
 })();
