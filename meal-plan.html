@@ -14,6 +14,7 @@
 
     <!-- Your stylesheet -->
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="./meal-plan.js"></script>
 </head>
 <body>
     <header>
@@ -23,11 +24,12 @@
         </div>
     </header>
     <div id="my-sidenav" class="sidenav">
-        <a href="#">Home</a>
+        <a id="close-button" href="javascript:void(0)" class="closebtn" onclick="collapse()">&times;</a>
+	<a href="#">Home</a>
         <a href="#">Finances</a>
         <a href="#">Plan Your Meals</a>
         <a href="#">Settings</a>
     </div>
-    <span>&#9776; open</span>
+    <span id="open-sidenav">&#9776; open</span>
 </body>
 </html>
