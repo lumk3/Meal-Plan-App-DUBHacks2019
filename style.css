@@ -54,8 +54,11 @@ h1 > button {
 }
 
 .menu-home h2 {
-    text-align: center;
     padding-left: 150px;
+}
+
+h2 {
+    text-align: center;
 }
 
 .dropbtn {
@@ -125,4 +128,12 @@ h1 > button {
 
 #chicken {
     background-image: url("img/chicken.jpeg");
+}
+
+.cost {
+    float: right;
+}
+
+.checkout-home p {
+    font-size: 20px;
 }
