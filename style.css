@@ -79,10 +79,19 @@ h1 > button {
     display: block;
 }
 
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
 .menu {
     border: 1px solid purple;
     margin: 20px;
     padding: 0px;
+}
+
+#myDropdown {
+    text-align: center;
+    margin-left: 44%;
 }
 
 .menu-content {
