@@ -16,4 +16,8 @@ public class Cart {
     public double grandTotal() {
         return Math.round((subTotal * 1.1) * 100.0) / 100.0;
     }
+
+    public void removeOrder(Order order) {
+        orders.remove(order);
+    }
 }
