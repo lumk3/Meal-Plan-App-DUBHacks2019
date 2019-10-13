@@ -24,7 +24,7 @@
 <body>
     <header>
         <h1>
-            <span>&#9776;</span>
+            <span id="open-sidenav">&#9776;</span>
             <i class="fa fa-paw"></i> DubSnacks
             <button type="button" id="checkout">Checkout</button>
         </h1>
@@ -32,21 +32,22 @@
     <div id="my-sidenav" class="sidenav">
         <a id="close-button" href="javascript:void(0)" class="closebtn">&times;</a>
         <a href="#"><i class="fa fa-home"></i>Home</a>
-        <a href="#"><i class="fa fa-money-check-alt"></i>Finances</a>
-        <a href="#"><i class="fa fa-pencil-alt"></i>Plan Your Meals</a>
+        <a href="#"><i class="fa fa-money"></i>Finances</a>
+        <a href="#"><i class="fa fa-pencil"></i>Plan Your Meals</a>
         <a href="#"><i class="fa fa-cog"></i>Settings</a>
     </div>
-    <div class="menu-home">
+    <div id="menu-id" class="menu-home">
         <div class="container">
             <h2>Menu for 
                 <span>
-                    <button class="dropbtn">Monday</button>
+                    <button id="drop" class="dropbtn">Monday</button>
                 </span>
             </h2>
             <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="#">Tuesday</a>
+                    <a href="#">Wednesday</a>
+                    <a href="#">Thursday</a>
+		    <a href="#">Friday</a>
             </div>
             <div class="row justify-content-center">
                 <div class="menu col-lg-4">
@@ -76,6 +77,26 @@
                             <h3>Fried Chicken</h3>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="checkout-id" class="checkout-home">
+        <div class="container">
+            <h2>Checkout</h2>
+            <div class="row">
+                <div class="checkout col-lg-8">
+                    <p>Hamburger<span class="cost">$9.75</span></p>
+                    <p>Quantity: 2</p>
+                    <hr size="100%">
+                    <p>Milkshake<span class="cost">11.67</span></p>
+                    <p>Quantity: 4</p> 
+                </div>
+                <div class="checkout col-lg-3">
+                    <p>Subtotal: <span class="cost">21.42</span></p>
+                    <p>Tax: <span class="cost">1.71</span></p>
+                    <hr size="100%">
+                    <p>Total: <span class="cost">23.13</span></p>
                 </div>
             </div>
         </div>
