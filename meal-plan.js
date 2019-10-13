@@ -1,5 +1,4 @@
 (function() {
-    console.log("Hey");
     window.addEventListener("load", init);
     
     function init() {
@@ -8,13 +7,10 @@
         document.getElementById("drop").addEventListener("click", dropdown);
         document.getElementById("checkout").addEventListener("click", checkout);
     }
-    
-    console.log("hey2");
 
 // Animated side menu navigation
 function expand() {
     document.getElementById("my-sidenav").style.width = "25%";
-    console.log("Yay");
 }
 
 function collapse() {
@@ -47,4 +43,16 @@ function checkout() {
   // make visible the checkout divs
   document.getElementById("checkout-id").style.display = "block";
 }
+/*
+function createFilter() {
+
+}
+
+function filterAllergies() {
+
+}
+
+function filterPrice() {
+
+}*/
 })();
