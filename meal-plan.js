@@ -48,5 +48,18 @@ function checkout() {
 function readJSON() {
     var obj = JSON.parse(hamshake);
     console.log(obj);
+    populate(obj);
+}
+
+function populate(obj) {
+    document.getElementById("meal-one").innerText = obj[0].Cart.Order1.Meal.name;
+    document.getElementById("cost-one").innerHTML = "$" + obj[0].Cart.Order1.Meal.price;
+    document.getElementById("quantity-one").innerText = "Quantity: " + obj[0].Cart.Order1.quantity;
+    document.getElementById("time-one").innerText = "Pickup Time: " + obj[0].Cart.Order1.time;
+    document.getElementById("meal-two").innerText = obj[0].Cart.Order2.Meal2.name;
+    console.log(obj[0].Cart.Order2.Meal2.name);
+    document.getElementById("cost-two").innerText = "$" + obj[0].Cart.Order2.Meal2.price;
+    document.getElementById("quantity-two").innerText = "Quantity: " + obj[0].Cart.Order2.quantity;
+    document.getElementById("time-two").innerText = "Pickup Time: " + obj[0].Cart.Order2.time;
 }
 })();
