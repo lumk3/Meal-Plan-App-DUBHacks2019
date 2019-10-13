@@ -12,24 +12,73 @@
     <!-- Font Awesome icon font -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" type="text/css" />
 
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+
     <!-- Your stylesheet -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="./meal-plan.js"></script>
+
+    <script type="text/javascript" src="meal-plan.js"></script>
+
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><i class="fa fa-paw"></i> DubSnacks</h1>
-            <p>Create. Eat. Thrive.</p>
-        </div>
+        <h1>
+            <span>&#9776;</span>
+            <i class="fa fa-paw"></i> DubSnacks
+            <button type="button" id="checkout">Checkout</button>
+        </h1>
     </header>
     <div id="my-sidenav" class="sidenav">
-        <a id="close-button" href="javascript:void(0)" class="closebtn" onclick="collapse()">&times;</a>
-	<a href="#">Home</a>
-        <a href="#">Finances</a>
-        <a href="#">Plan Your Meals</a>
-        <a href="#">Settings</a>
+        <a id="close-button" href="javascript:void(0)" class="closebtn">&times;</a>
+        <a href="#"><i class="fa fa-home"></i>Home</a>
+        <a href="#"><i class="fa fa-money-check-alt"></i>Finances</a>
+        <a href="#"><i class="fa fa-pencil-alt"></i>Plan Your Meals</a>
+        <a href="#"><i class="fa fa-cog"></i>Settings</a>
     </div>
-    <span id="open-sidenav">&#9776; open</span>
+    <div class="menu-home">
+        <div class="container">
+            <h2>Menu for 
+                <span>
+                    <button class="dropbtn">Monday</button>
+                </span>
+            </h2>
+            <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="menu col-lg-4">
+                    <div class="menu-content">
+                        <div class="menu-img" id="hamburger">
+                            <h3>Hamburger</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu col-lg-4">
+                    <div class="menu-content">
+                        <div class="menu-img" id="pancakes">
+                            <h3>Pancakes</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu col-lg-4">
+                    <div class="menu-content">
+                        <div class="menu-img" id="milkshakes">
+                            <h3>Milkshake</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu col-lg-4">
+                    <div class="menu-content">
+                        <div class="menu-img" id="chicken">
+                            <h3>Fried Chicken</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
