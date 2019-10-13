@@ -2,7 +2,7 @@ public class Cart {
     private ArrayList<Order> orders;
     private double subTotal;
 
-    public Cart(ArrayList<Order> orders, double total) {
+    public Cart(ArrayList<Order> orders) {
         this.orders = orders;
         for (Order order : orders) {
             subTotal += order.orderTotal();

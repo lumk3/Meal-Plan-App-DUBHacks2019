@@ -39,20 +39,14 @@ window.onclick = function(event) {
 
 // checkout button on home page
 function checkout() {
-  document.getElementById("menu-id").style.display = "none";
-  // make visible the checkout divs
-  document.getElementById("checkout-id").style.display = "block";
-}
-/*
-function createFilter() {
-
+    document.getElementById("menu-id").style.display = "none";
+    document.getElementById("checkout-id").style.display = "block";
+    readJSON();
 }
 
-function filterAllergies() {
-
+// read/parse JSON
+function readJSON() {
+    var obj = JSON.parse(hamshake);
+    console.log(obj);
 }
-
-function filterPrice() {
-
-}*/
 })();
