@@ -5,7 +5,12 @@ public class Meal {
     private boolean containsCommonAllergens;
     private int calories;
 
-    public Meal {
+//    public Meal(String name, double price, boolean containsCommonAllergens, int calories) {
+//        this(name, price, null, containsCommonAllergens, calories);
+//    }
+
+    public Meal(String name, double price, ArrayList<String> ingredients,
+                boolean containsCommonAllergens, int calories) {
        this.name = name;
        this.price = price;
        this.ingredients = new ArrayList<>();
