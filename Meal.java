@@ -1,13 +1,12 @@
+import java.io.*;
+import java.util.*;
+
 public class Meal {
     private String name;
     private double price;
     private ArrayList<String> ingredients;
     private boolean containsCommonAllergens;
     private int calories;
-
-//    public Meal(String name, double price, boolean containsCommonAllergens, int calories) {
-//        this(name, price, null, containsCommonAllergens, calories);
-//    }
 
     public Meal(String name, double price, ArrayList<String> ingredients,
                 boolean containsCommonAllergens, int calories) {
@@ -24,6 +23,10 @@ public class Meal {
 
     public double getPrice() {
         return Math.round(price * 100.0) / 100.0;
+    }
+
+    public int getCalories() {
+        return calories;
     }
 
     public void addIngredient(String ingredient) {
