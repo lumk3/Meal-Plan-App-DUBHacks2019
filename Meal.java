@@ -8,10 +8,6 @@ public class Meal {
     private boolean containsCommonAllergens;
     private int calories;
 
-//    public Meal(String name, double price, boolean containsCommonAllergens, int calories) {
-//        this(name, price, null, containsCommonAllergens, calories);
-//    }
-
     public Meal(String name, double price, ArrayList<String> ingredients,
                 boolean containsCommonAllergens, int calories) {
        this.name = name;
@@ -27,6 +23,10 @@ public class Meal {
 
     public double getPrice() {
         return Math.round(price * 100.0) / 100.0;
+    }
+
+    public int getCalories() {
+        return calories;
     }
 
     public void addIngredient(String ingredient) {
